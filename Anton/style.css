@@ -1,0 +1,509 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.navbarMenu {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+}
+
+.navbar__main {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    gap: 20px;
+}
+
+.navbar__main a {
+    text-decoration: none;
+    color: #000;
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: 700;
+    transition: .3s all ease-in-out;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.navbar__main a:hover {
+    color: #AD8F47;
+}
+
+.maincon {
+    width: 100%;
+    padding-top: 40px;
+}
+
+.maincontent {
+    display: flex;
+    align-items: center;
+}
+
+.maincon__main {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+
+}
+
+.background__content {
+    width: 50%;
+    height: 600px;
+    background: url(img/mainbackgraund.jpg) no-repeat center;
+    border-radius: 10% 10% 10% 10%;
+}
+
+.maincon__main h2 {
+    font-size: 24px;
+    color: #AD8F47;
+    font-weight: 900;
+}
+
+.maincon__main h1 {
+    width: 100%;
+    color: inherit;
+    font-size: 70px;
+    text-transform: uppercase;
+    font-weight: 900;
+    color: rgb(9, 9, 51);
+}
+
+.maincon__main button {
+    padding: 10px;
+    width: 40%;
+    border: none;
+    cursor: pointer;
+    background-color: #AD8F47;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 900;
+    border-radius: 8px 8px 0 0;
+    transition: .3s all ease-in-out;
+}
+
+.maincon__main button:hover, .house__btn button:hover , .mainpred button:hover{
+    transform: translateY(-10%);
+    background-color: #c9a34d;
+}
+
+.key {
+    padding-top: 100px;
+}
+
+.key__text p{
+    font-size: 20px;
+    font-weight: 900;
+    color: #AD8F47;
+}
+
+.key__text h2 , .house__text h2, .price__text h2{
+    margin-top: 10px;
+    font-size: 32px;
+    text-transform: uppercase;
+    color:  rgb(9, 9, 51);
+}
+
+.main__key {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 30px;
+}
+
+.maincontent .block {
+    padding-top: 25px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+}
+
+.maincontent .block h2 {
+    color:  rgb(9, 9, 51);
+}
+
+.maincontent .block p {
+    color:  gray;
+}
+
+.maincontent .block img {
+    width: 50px;
+}
+
+.house {
+    padding-top: 100px;
+}
+
+.house__text p{
+    font-size: 20px;
+    font-weight: 900;
+    color: #AD8F47;
+}
+
+.housemain {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+}
+
+.house__content {
+    padding-top: 50px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-auto-rows: 480px;
+}
+
+.house__content .block img {
+    width: 80%;
+}
+
+.house__content .block h2 {
+    font-weight: 900;
+    margin-bottom: 10px;
+    margin-top: 20px;
+    color:  rgb(9, 9, 51);
+}
+
+.house__content .block p {
+    color: gray;
+}
+
+.house__btn button {
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+    background-color: #AD8F47;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 900;
+    border-radius: 8px 8px 8px 8px;
+    transition: .3s all ease-in-out;
+}
+
+.mainprice {
+    padding-top: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.mainprice .price__text {
+    margin-bottom: 50px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.mainprice .price__text p{
+    font-size: 20px;
+    font-weight: 900;
+    color: #AD8F47;
+}
+
+
+
+.price__maincontent {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    gap: 15px;
+}
+
+.price__maincontent .block {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid gray;
+    transition: .3s all ease-in-out;
+    height: 520px;
+}
+
+.price__maincontent .block:hover {
+    transform: translateY(-5%);
+}
+
+.price__maincontent .block img {
+    padding: 0;
+    width: 100%;
+}
+
+.price__maincontent .block h2 {
+    padding: 10px;
+    width: 100%;
+    color: #fff;
+    background-color: #AD8F47;
+}
+
+.price__maincontent .block p {
+    padding: 20px;
+    color: gray;
+}
+
+.price__maincontent .block span {
+    font-size: 24px;
+    padding-bottom: 10px;
+    font-weight: 900;
+    color: rgb(9, 9, 51);
+}
+
+.price__maincontent .block button {
+    width: 40%;
+    padding: 6px;
+    border: none;
+    cursor: pointer;
+    background-color: #AD8F47;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 900;
+    border-radius: 8px 8px 8px 8px;
+    transition: .3s all ease-in-out;
+    margin-bottom: 30px;
+}
+
+.price__maincontent .block button:hover {
+    background-color: #c9a34d;
+}
+
+.pred {
+    margin-top: 100px;
+    height: 600px;
+    width: 100%;
+    background: url(img/pred.jpg) no-repeat;
+    background-size: 100% 100% ;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+}
+
+.mainpred p{
+    font-size: 24px;
+    color: #AD8F47;
+    font-weight: 900;
+    margin-bottom: 10px;
+}
+
+.mainpred h2{
+    font-size: 32px;
+    color: #fff;
+    font-weight: 900;
+    margin-bottom: 20px;
+}
+
+.mainpred button {
+    border: none;
+    padding: 10px;
+    font-weight: 900;
+    background: #AD8F47;
+    border-radius: 8px;
+    color: #fff;
+    transition: .3s all ease-in-out;
+}
+
+.comments {
+    padding-top: 40px;
+}
+
+.comm {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.com__text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.com__text p {
+    font-weight: 900;
+    font-size: 24px;
+    color: #AD8F47;
+}
+
+.com__text h2 {
+    font-weight: 900;
+    font-size: 32px;
+    color: rgb(9, 9, 51);
+}
+
+.pipl {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    text-align: center;
+}
+
+.pipl .block {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.pipl .block h2 {
+    font-size: 24px;
+    font-weight: 900;
+    color: rgb(9, 9, 51);
+}
+
+.pipl .block span {
+    color: #AD8F47;
+    font-weight: 900;
+}
+
+.pipl .block p {
+    padding-bottom: 10px;
+    color: gray;
+}
+
+.feedback {
+    padding-top: 100px;
+}
+
+.feedmain {
+    display: flex;
+    gap: 30px;
+}
+
+.feedmain .inp {
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.feedmain .inp h2 {
+    font-size: 32px;
+    font-weight: 900;
+    color: rgb(9, 9, 51);
+}
+
+.feedmain .inp p {
+    font-weight: 900;
+    font-size: 18px;
+    color: #AD8F47;
+}
+
+.feedmain .inp hr {
+    width: 100%;
+}
+
+.feedmain .inp input {
+    width: 100%;
+    border: none;
+    padding: 3px;
+    margin: 0 10px 0 10px;
+
+    font-size: 18px;
+    color: gray;
+    border-radius: 8px;
+}   
+
+#submit {
+    padding: 6px;
+    width: 50%;
+    margin-top: 25px;
+    cursor: pointer;
+    background: #AD8F47;
+    color: #fff;
+}
+
+.cont {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.cont h2, p {
+    font-weight: 900;
+}
+
+.cont button {
+    border: none;
+    padding: 6px;
+    width: 25%;
+    cursor: pointer;
+    background: #AD8F47;
+    color: #fff;
+    border-radius: 16px;
+}
+
+.contact__date {
+    padding-top: 100px;
+}
+
+.date {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 50px;
+}
+
+.date p {
+    color: #AD8F47;
+    font-weight: 900;
+} 
+
+.date h2 {
+    padding-top: 10px;
+    color: rgb(9, 9, 51);
+    font-weight: 900;
+}
+
+.main__date .contact__icon {
+    display: flex;
+    text-align: center;
+    justify-content: space-around;
+    padding-bottom: 100px;
+}
+
+.main__date .contact__icon .block h2 {
+    font-weight: 900;
+    padding-bottom: 5px;
+    color:  rgb(9, 9, 51);
+}
+
+.main__date .contact__icon .block img {
+    width: 10%;
+}
+
+.main__date .contact__icon .block p {
+    color: #AD8F47;
+    font-weight: 900;
+    font-size: 18px;
+}
+
+.footer {
+    height: 50px;
+    background: rgb(9, 9, 51);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.anton {
+    color: #AD8F47;
+    font-weight: 900;
+}
